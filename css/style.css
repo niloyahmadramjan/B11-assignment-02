@@ -15,6 +15,14 @@
 .flex {
   display: flex;
 }
+/* grid property */
+.grid {
+  display: grid;
+}
+/* display hide  */
+.hide {
+  display: none;
+}
 
 /* primary button  */
 .btn-primary {
@@ -26,7 +34,7 @@
   padding: 10px;
   width: 150px;
 }
-/* color  */
+/* color name  */
 .bg-black {
   background-color: #111111;
 }
@@ -43,6 +51,9 @@
 .bright-indigo {
   color: #5d58ef;
 }
+.electric-purple {
+  color: #8700ff;
+}
 /* li a tag style none  */
 li {
   list-style: none;
@@ -56,6 +67,7 @@ a {
 
 /* body margin wrapper  */
 .container {
+  padding: 60px 0px;
   margin: 0 auto;
   width: 80%;
 }
@@ -109,6 +121,50 @@ a {
   max-width: 50%;
 }
 
+/* curriculum-section  */
+.curriculum-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+}
+.curriculum-section {
+  background-image: url("/assets/bg.png");
+  background-repeat: no-repeat;
+}
+.block-wrapper {
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  margin-top: 80px;
+}
+.curriculum-block {
+  width: 367px;
+  height: 476px;
+  padding: 58px 40px;
+  border: 1px solid transparent;
+  border-radius: 19px;
+  text-align: center;
+  background: linear-gradient(to bottom, #def5ff 0%, #ffffff 40%);
+  box-shadow: 0px 0px 28px 0.94px rgba(0, 0, 0, 0.05);
+}
+.kinder-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 33px;
+}
+.kinder-pare {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #808080;
+  margin-bottom: 33px;
+}
+.kinder-btn {
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  background: none;
+}
+
 /* Responsive design */
 @media screen and (max-width: 576px) {
   /* navigation area  */
@@ -130,19 +186,30 @@ a {
   .right-container {
     max-width: 100%;
   }
-  .left-container{
+  .left-container {
     max-width: 100%;
   }
-  
+
   .right-container img {
     max-width: 100%;
   }
-
+  .hero-title {
+    font-size: 2rem;
+    margin-top: 24px;
+  }
   .hero-section {
+    text-align: center;
     flex-direction: column-reverse;
   }
-}
 
-.hide {
-  display: none;
+  /* Curriculum section  */
+  .block-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .curriculum-block {
+    margin-bottom: 12px;
+  }
+  .curriculum-title {
+    font-size: 1.8rem;
+  }
 }
