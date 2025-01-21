@@ -172,17 +172,22 @@ body {
 .block-wrapper {
   grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
+  gap: 28px;
   margin-top: 80px;
 }
 .curriculum-block {
-  width: 367px;
-  height: 476px;
   padding: 58px 40px;
   border: 1px solid transparent;
   border-radius: 19px;
   text-align: center;
   background: linear-gradient(to bottom, #def5ff 0%, #ffffff 40%);
   box-shadow: 0px 0px 28px 0.94px rgba(0, 0, 0, 0.05);
+}
+.curi-1 {
+  background: linear-gradient(to bottom, rgb(255, 229, 173) 0%, #ffffff 40%);
+}
+.curi-2 {
+  background: linear-gradient(to bottom, #e7d4ff 0%, #ffffff 40%);
 }
 .kinder-title {
   font-size: 1.6rem;
@@ -243,7 +248,7 @@ body {
 .date {
   position: absolute;
   left: 34px;
-  top: 320px;
+  top: 350px;
   border-radius: 48px;
   color: #ffffff;
   padding: 10px 20px;
@@ -258,6 +263,9 @@ body {
   padding-bottom: 48px;
 }
 /* stories right section */
+.stories {
+  background-image: url("/assets/bg.png");
+}
 .stories-right {
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
@@ -295,4 +303,51 @@ body {
 }
 .d-block-none {
   display: none;
+}
+
+.view-btn {
+  display: block;
+  margin: 80px auto 60px auto;
+}
+/* footer section */
+
+footer {
+  padding: 120px 140px 170px 140px;
+  background-color: #01acfd;
+}
+.footer-wrapper {
+  justify-content: space-between;
+}
+.footer-logo{
+  width: 400px;
+}
+.f-img-title {
+  align-items: center;
+  gap: 10px;
+}
+.f-img-title h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+.footer-logo p{
+  margin-top: 32px;
+}
+.footer-logo p {
+  color: #eaeaea;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+}
+.abt-scl {
+  font-size: 1.25rem;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+.footer-items > li {
+  padding-bottom: 20px;
+}
+.footer-items > li > a {
+  color: #eaeaea;
 }

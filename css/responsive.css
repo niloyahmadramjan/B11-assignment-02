@@ -44,12 +44,17 @@
   /* Curriculum section  */
   .block-wrapper {
     grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    margin-bottom: 40px;
+    max-width: 100%;
   }
+ 
   .curriculum-block {
     margin-bottom: 12px;
   }
   .curriculum-title {
     font-size: 1.8rem;
+    margin-top: 10px;
   }
   .angle-icon {
     display: none;
@@ -78,5 +83,12 @@
   }
   .stories-left {
     display: none;
+  }
+  .stories-block p {
+    padding: 20px 10px;
+  }
+  /* footer section  */
+  .footer-wrapper{
+    flex-direction: column;
   }
 }
