@@ -1,0 +1,82 @@
+/* Responsive design */
+@media screen and (max-width: 576px) {
+  /* navigation area  */
+  .container {
+    margin: 0 auto;
+    padding: 15px 0px;
+    width: 95%;
+  }
+  .menu-bar {
+    display: block;
+  }
+
+  .header-section {
+    display: none;
+    flex-direction: column;
+  }
+  .nav-list {
+    margin: 30px 0px;
+  }
+  .nav-list a {
+    padding: 0 10px;
+  }
+  /* hero section  */
+
+  .right-container {
+    max-width: 100%;
+  }
+  .left-container {
+    max-width: 100%;
+  }
+
+  .right-container img {
+    max-width: 100%;
+  }
+  .hero-title {
+    font-size: 2rem;
+    margin-top: 24px;
+  }
+  .hero-section {
+    text-align: center;
+    flex-direction: column-reverse;
+  }
+
+  /* Curriculum section  */
+  .block-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .curriculum-block {
+    margin-bottom: 12px;
+  }
+  .curriculum-title {
+    font-size: 1.8rem;
+  }
+  .angle-icon {
+    display: none;
+  }
+
+  /* stories section  */
+  .stories-right {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .date-block {
+    top: 95px;
+    left: 20px;
+    padding: 5px 5px;
+  }
+  .date-block,
+  .date-block-2 {
+    top: 100px;
+    left: 20px;
+    padding: 5px 5px;
+  }
+  .stories-right img {
+    width: 100%;
+  }
+  .d-block-none {
+    display: block;
+  }
+  .stories-left {
+    display: none;
+  }
+}
