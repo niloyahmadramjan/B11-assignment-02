@@ -312,6 +312,7 @@ body {
 /* footer section */
 
 footer {
+  max-width: 1000%;
   padding: 120px 140px 170px 140px;
   background-color: #01acfd;
 }
